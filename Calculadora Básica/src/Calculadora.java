@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Calculadora {
 
-	private static final Double Double = null;
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Double primerNumero = null;
@@ -36,11 +34,20 @@ public class Calculadora {
 		System.out.println("Indica que operación deseas realizar (1.sumar, 2.restar, 3.multiplicar, 4.dividir)");
 		int operacion = scanner.nextInt();
 		
-		if (operacion = 1) {
-			primerNumero + segundoNumero = Double resultado;
-			System.out.println("El resultado de sumar ambos número es de:" + resultado);
+		if (operacion == 1) {
+			resultado = primerNumero + segundoNumero;
+			System.out.println("El resultado de sumar ambos número es de: " + resultado);
+		} else if (operacion == 2) {
+			resultado = primerNumero - segundoNumero;
+			System.out.println("El resultado de restar ambos número es de: " + resultado);
+		} else if (operacion == 3) {
+			resultado = primerNumero * segundoNumero;
+			System.out.println("El resultado de multiplicar ambos número es de: " + resultado);
+		} else if (operacion == 4) {
+			resultado = primerNumero / segundoNumero;
+			System.out.println("El resultado de dividir ambos número es de: " + resultado);
 		} else {
-
+			System.out.println("Valor introducido no es correcto");
 		}
 
 		scanner.close();
